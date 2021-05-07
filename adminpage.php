@@ -1,0 +1,107 @@
+
+<?php
+session_start();
+//echo($_SESSION['username']);
+				$message=$_SESSION['username'];
+				//echo "<script type='text/javascript'>alert(' $message (Student)');</script>";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="cataloguesystem.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topnav">
+
+		    <pre class="tab2"></pre><button class="button3"><a href="login.php">login</a></button>
+		    <pre class="tab"></pre>
+		    <button class="button4"><a href="#">signup</a></button>
+		    
+
+		    <pre class="tab4"></pre><a href=https://www.facebook.com/><img class="image1" src="static\fb.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.instagram.com/><img class="image2" src="static\instagram.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.youtube.com/?gl=IN><img class="image3" src="static\youtube.png" ></a>
+
+		    <pre class="tab6"></pre><button class="button_logout"><a href=logout.html>Logout</a></button>
+
+		</div>
+		<div class="middlenav">
+			<div class="midnav">
+				<ul style="float:right">		
+				<a href="homepage.html">Home</a> &emsp;
+				<a href="aboutpage.html">About</a> &emsp;
+				<a href="Blog.html">Forum</a>&emsp;
+				<a href="#">Users</a>&emsp;
+			</ul>
+			</div>
+		</div>
+		<div class="adminpage">
+			<h1><center>Users</center></h1>
+		</div>
+		<div class="admin_users">
+			<div class="gridee3">
+		  		<br>
+		  		<br>
+		  		<div class="one_admin">
+		  			<div>
+		  				<img src="static\profile1.jpg" class="profileimage1">
+					</div>
+					<div class="profiledescription">
+					<br>
+					<h3><center>Bharadwaj</center></h3><br>
+					<h4><center>Student</center></h4>
+					<br><center><button class="button3"><a href="#">Add/</a><a href="#">Edit/</a><a href="#">Delete</a></button></center>
+					</div>
+		  		</div>
+		  		<div class="two_admin">
+		  			<div>
+		  				<img src="static\profile2.jpg" class="profileimage1">
+					</div>
+					<div class="profiledescription">
+					<br>
+					<h3><center>Srikkanth</center></h3><br>
+					<h4><center>Staff</center></h4>
+					<br><center><button class="button3"><a href="#">Add/</a><a href="#">Edit/</a><a href="#">Delete</a></button></center>
+					</div>
+		  		</div>
+		  		<div class="three_admin">
+		  			<div>
+		  				<img src="static\profile1.jpg" class="profileimage1">
+					</div>
+					<div class="profiledescription">
+					<br>
+					<h3><center>Sri</center></h3><br>
+					<h4><center>Student</center></h4>
+					<br><center><button class="button3"><a href="#">Add/</a><a href="#">Edit/</a><a href="#">Delete</a></button></center>
+					</div
+		  		</div>
+		  		<br>
+		  		<br>
+		  		<br>
+		  		<br>
+		  		<br>
+		  		<br>
+		  		<br>
+		  	</div>
+		</div>
+<footer>
+	<div class="Foot">
+		<br>
+		<br>
+		<div class="login_txt">
+		<hr style="width:90%;margin-left:05%; align-items: center;">
+		<br>
+			<font color="#FFFFFF" style="margin-left: 05%;">Created by</font>
+			<div class="sub_txt">
+			<font color="#FFFFFF" style="margin-left: 75%;">All Rights Reserved</font>
+		</div>
+	</div>
+	</div>
+</footer>
+	</div>
+</body>
+</html>

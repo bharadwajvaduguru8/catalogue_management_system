@@ -1,0 +1,131 @@
+<?php
+$servername ="localhost";
+$username = "root";
+$password = "root";
+$database = "cataloguesystem";
+$conn = new mysqli($servername, $username, $password, $database);
+if(isset($_POST['Getin']))
+{
+  session_start();
+$username=$_POST['username'];
+ $emailid=$_POST['emailid'];
+ $password=$_POST['password'];
+ if($_POST['password'] == $_POST['cpassword'])
+ {
+ $sql = "INSERT INTO login (username, emailid, password) VALUES ('$username', '$email', '$password')";
+ mysqli_query($conn,$sql);
+ header("location: login.php");
+ }
+ else
+ $_SESSION['message'] ="Password incorrect";
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="cataloguesystem.css">
+  <script>
+  function validateForm() {
+   var x = document.forms["form"]["username"].value;
+   if (x == "") {
+    alert("Please specify your Username");
+    return false;
+  }
+  var x = document.forms["form"]["emailid"].value;
+  if (x == "") {
+   alert("Please specify correct Email Id");
+   return false;
+ }
+ var x = document.forms["form"]["password"].value;
+ if (x == "") {
+  alert("Please enter the password");
+  return false;
+}
+var x = document.forms["form"]["cpasswod"].value;
+if (x == "") {
+ alert("Please re-enter the password");
+ return false;
+}
+}
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topnav">
+
+		    <pre class="tab2"></pre><button class="button3"><a href="login.php">login</a></button>
+		    <pre class="tab"></pre>
+		    <button class="button4"><a href="signup.php">signup</a></button>
+		    
+
+		    <pre class="tab4"></pre><a href=https://www.facebook.com/><img class="image1" src="static\fb.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.instagram.com/><img class="image2" src="static\instagram.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.youtube.com/?gl=IN><img class="image3" src="static\youtube.png" ></a>
+
+		    <pre class="tab6"></pre>
+
+		</div>
+
+		<div class="middlenav">
+			<div class="midnav_short">
+				<ul style="float:right">		
+				<a href="homepage.html">Home</a> &emsp;
+				<a href="aboutpage.html">About</a> &emsp;
+				<a href="#">Forum</a>
+			</ul>
+			</div>
+		</div>
+
+		<div class="signupdiv">
+		<form method="POST" enctype="multipart/form-data" name="form" onsubmit="return validateForm()">
+			<h1>SignUp</h1>
+			<br>
+			<br>
+		    <label> <b> Username: &nbsp;&nbsp;&nbsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;</b></label> <input type="text" name="username" placeholder="Please enter your Username" title="Please enter your username(6-15 characters, you may use _@$&#)" pattern="[A-Za-z0-9_@$&# ]{6,15}">
+		    <br>
+		    <br>
+		    <label> <b> Email Id: &emsp;&emsp;&emsp;&emsp;&emsp;</b></label> <input type="text" placeholder="Please enter your E-mail"name="emailid"pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+		    <br>
+		    <br>
+		    <label><b> Password: &emsp;&emsp;&emsp;&emsp;&nbsp; &nbsp;</b> </label> <input type="Password" placeholder="Please enter password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+		    <br>
+		    <br>
+		    <label><b> Confirm Password: &ensp;&nbsp;</b> </label> <input type="Password" name="cpassword"placeholder="Please re-enter password">
+		    <br>
+		    <br>
+		    <b>Role:</b>&emsp;&emsp;
+  			<input type="radio" id="Student" name="role" value="Student">
+  			<label for="role">Student</label>&emsp;
+  			<input type="radio" id="Staff" name="role" value="Staff">
+  			<label for="role">Staff</label>&emsp;
+  			<input type="radio" id="Admin" name="role" value="Admin">
+  			<label for="role">Admin</label>
+		    <br>
+		    <br>
+		    <br>
+		    <!--<input type="submit" value="Submit" style="width: 25%; height:5%; margin-left: auto;" />-->
+		    <input type="submit" value="  Submit  " class="">
+		  </form> 
+
+		</div>
+
+<footer>
+	<div class="Foot">
+		<br>
+		<br>
+		<div class="login_txt">
+		<hr style="width:90%;margin-left:05%; align-items: center;">
+		<br>
+			<font color="#FFFFFF" style="margin-left: 05%;">Created by</font>
+			<div class="sub_txt">
+			<font color="#FFFFFF" style="margin-left: 75%;">All Rights Reserved</font>
+		</div>
+	</div>
+	</div>
+</footer>
+	</div>
+</body>
+</html>

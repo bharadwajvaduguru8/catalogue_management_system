@@ -1,0 +1,83 @@
+<?php
+session_start();
+//echo($_SESSION['username']);
+				$message=$_SESSION['username'];
+				//echo "<script type='text/javascript'>alert(' $message (Student)');</script>";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="ckeditor/ckeditor.js"></script>
+<link rel="stylesheet" type="text/css" href="cataloguesystem.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topnav">
+
+		    <pre class="tab2"></pre><button class="button3"><a href="login.php">login</a></button>
+		    <pre class="tab"></pre>
+		    <button class="button4"><a href="signup.php">signup</a></button>
+		    
+
+		    <pre class="tab4"></pre><a href=https://www.facebook.com/><img class="image1" src="static\fb.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.instagram.com/><img class="image2" src="static\instagram.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.youtube.com/?gl=IN><img class="image3" src="static\youtube.png" ></a>
+
+		    <pre class="tab6"></pre><button class="button_logout"><a href=logout.html>Logout</a></button>
+
+		</div>
+
+		<div class="middlenav">
+			<div class="midnav">
+				<ul style="float:right">		
+				<a href="homepage_afterstafflogin.html">Home</a> &emsp;
+				<a href="aboutpage_afterstafflogin.html">About</a> &emsp;
+				<a href="Blog_staff.html">Forum</a> &emsp;
+				<a href="upcomingcourses.html">Upcoming courses</a>&emsp;
+				<a href="plannedcourses.html">Planned courses</a>&emsp;
+				<a href="feedback_staff.html">View Feedback</a>
+			</ul>
+			</div>
+		</div>
+		<div class="maintitle"> 
+			<h3 ><center>Feedback of the courses:</center></h3>
+		</div>
+		<div class="feedbackstaff">
+			<table style="width:70% ">
+  				<tr>
+    				<th>Studnet ID</th>
+				    <th>Course ID</th>
+				    <th>Feedback</th>
+				</tr>
+				<tr>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				  </tr>
+				<tr>
+			    <td></td>
+			    <td></td>
+			    <td></td>
+			  	</tr>
+			</table>
+		</div>
+<footer>
+	<div class="Foot">
+		<br>
+		<br>
+		<div class="login_txt">
+		<hr style="width:90%;margin-left:05%; align-items: center;">
+		<br>
+			<font color="#FFFFFF" style="margin-left: 05%;">Created by</font>
+			<div class="sub_txt">
+			<font color="#FFFFFF" style="margin-left: 75%;">All Rights Reserved</font>
+		</div>
+	</div>
+	</div>
+</footer>
+	</div>
+</body>
+</html>

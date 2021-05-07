@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topNav {
+    padding: 15px 0px 10px 0px;
+    text-align: center;
+    height: 40px;
+    background: #cfcdcd;
+}
+
+.btn {
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 1px solid #212121;
+    background: #cfcdcd;
+}
+
+.btn-primary {
+    border: none;
+    background: #212121;
+    color: #fff;
+}
+
+.btn-enrolled {
+    padding: 4px 20px;
+}
+
+nav {
+    background: #838282;
+}
+
+nav ul {
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1.25rem 0.75rem;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.content {
+    flex-grow: 1;
+    /* background: #f7b2b2; */
+    padding: 1.5rem 5.5rem;
+    text-align: center;
+}
+
+.content-heading {
+    font-size: 24px;
+    padding-top: 4px;
+}
+
+.content-flex-container {
+    display: flex;
+    min-height: 200px;
+    font-size: 15px;
+        max-width: 80%;
+}
+
+.content-flex-columns {
+    flex: 0.5;
+}
+
+.content-flex-columns:nth-of-type(even) {
+    flex: 2;
+}
+
+.content-flex-columns:nth-of-type(odd) {
+    /* background: #85929E; */
+    color: white;
+    text-align: center;
+    border-right: 1px solid #818181;
+}
+
+.content-flex-columns:nth-of-type(even) {
+    padding-left: 1.5rem;
+}
+
+.side-tab {
+    background: #dddddd;
+    color: #212121;
+    text-align: end;
+    padding: 10px 20px;
+    border-right: 2px solid #818181;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+.card {
+    background-color: #838282;
+    color: white;
+    height: 8rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-image {
+    height: 6rem;
+}
+
+.card-text {
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    color: #212121;
+}
+
+#footer {
+    background: #292828;
+    color: #fff;
+    bottom: 0;
+    padding: 1.25rem 2.5rem;
+}
+
+.lb2 {
+    float: right;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        justify-content: center;
+    }
+    .content-flex-container {
+        flex-direction: column;
+    }
+    .content-flex-columns:nth-of-type(even) {
+        padding-top: 1.5rem;
+        padding-left: 0;
+    }
+    .side-tab {
+        text-align: center;
+        border-right: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

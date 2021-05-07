@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+
+<link rel="stylesheet" type="text/css" href="cataloguesystem.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topnav">
+		    <pre class="tab2"></pre><button class="button3"><a href="login.php">login</a></button>
+		    <pre class="tab"></pre>
+		    <button class="button4"><a href=signup.php>signup</a></button>	
+
+		    <pre class="tab4"></pre><a href=https://www.facebook.com/><img class="image1" src="E:\OneDrive - GMR Institute of Technology\Masters\Web-data-management\project_me\project_2\static\fb.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.instagram.com/><img class="image2" src="E:\OneDrive - GMR Institute of Technology\Masters\Web-data-management\project_me\project_2\static\instagram.png" ></a>
+
+		    <pre class="tab"></pre><a href=https://www.youtube.com/?gl=IN><img class="image3" src="E:\OneDrive - GMR Institute of Technology\Masters\Web-data-management\project_me\project_2\static\youtube.png" ></a>
+		</div>
+		<div class="middlenav">
+			<div class="midnav">
+				<ul style="float:right">		
+				<a href="homepage_afterstudentlogin.html">Home</a> &emsp;
+				<a href="aboutpage_afterstudentlogin.html">About</a> &emsp;
+				<a href="Blog_student.html">Forum</a> &emsp;
+				<a href="listofcourses.html">List of courses</a>&emsp;
+				<a href="feedback_student.html">Feedback</a>
+			</div>
+		</div>
+		<div class="maintitle"> 
+			<h3 ><center>Feedback about the courses</center></h3>
+		</div>
+		<br>
+		<div class="feedbackstudent">
+		<form  method="POST" enctype="multipart/form-data">	
+			<div class="drop">
+			 <label>Select the Course Id:</label>
+             <select class = "myList">
+               <option value = "1">CSE-5334</option>
+               <option value = "2">CSE-6334</option>
+               <option value = "3">CSE-5331</option>
+             </select>
+         	</div>
+           <br>
+		   <textarea name="content" id="textarea" class="feed_txt" style="margin: 0px 65.3125px 65.3125px -87.0938px;width: 785px;height: 225px;"></textarea>
+		    <br>
+		    <input type="submit" value="Submit" style="width: 15%; height:5%; margin-left: -85%;" />
+		 </form> 
+		 <form action="MAILTO:bharadwaj.vaduguru@mavs.uta.edu?subject=Feedback for the courses" method="POST" enctype="multipart/form-data">
+		 	<div class="mailbutton">
+		 	<button>&emsp; Feedback through Mail&emsp;</button>
+		 </div>
+		 </form>	
+		</div>
+<footer>
+	<div class="Foot">
+		<br>
+		<br>
+		<hr style="width:90%;margin-left:05%; align-items: center;">
+		<br>
+		<font color="#FFFFFF" style="margin-left: 05%;">Created by</font>
+		<font color="#FFFFFF" style="margin-left: 75%;">All Rights Reserved</font>
+	</div>
+</footer>
+	</div>
+</body>
+</html>

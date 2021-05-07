@@ -1,0 +1,7 @@
+Enrolled courses--Student:
+1)if only, one course, The size is changing.
+2)Footer adjustement
+
+Planned courses:
+1)Subject size
+ 
